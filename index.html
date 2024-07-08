@@ -1,0 +1,80 @@
+
+<!--html:5 raccourci pour créer la structure de base en HTML-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV de Manon DODÉ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="theme-selector">
+        <label for="theme-choice">Choisir un thème:</label>
+        <select id="theme-choice">
+            <option value="soft">Soft</option>
+            <option value="girly">Girly</option>
+            <option value="ocean">Océan</option>
+            <option value="forest">Forêt</option>
+        </select>
+    </div>
+    <div class="container">
+        <header>
+            <div class="photo-container">
+                <img class="photo-placeholder" src="photoCV.jpeg" alt="PhotoCV">
+            </div>
+            <h1>Manon DODÉ</h1>
+            <p class="title">Développeuse Web en Alternance</p>
+        </header>
+        
+        <main>
+            <!-- <section> représente une section générique d'un document -->
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>📧 manondode974@outlook.fr</p>
+                <p>📱 06 23 29 16 16 </p>
+                <p>📫 Saint Nicolas du Pelem, 22480</p>
+            </section>
+            
+            <section id="experience">
+                <h2>Expériences professionnelle</h2>
+                <ul id="experienceList"></ul>
+            </section>
+
+            <section id="formation">
+                <h2>Formations</h2>
+                <ul id="formationsList"></ul>
+            </section>
+
+            <section id="compétences">
+                <h2>Compétences</h2>
+            </section>
+            <!-- table = tableau -->
+            <table>
+                <!-- <td> définit une cellule d'un tableau qui contient des données. -->
+                <tr> <td class="tdleft"> 
+                    <!-- p = paragraphe. Strong = gras. em = italique.  -->
+                    <p><strong>HTML</strong> ⇨ <em>Débutante.</em></p>
+                    <p><strong>CSS</strong>  ⇨ <em>Débutante.</em></p>
+                    <p><strong>JavaScript</strong> ⇨ <em>Débutante.</em></p>
+                    <p><strong>Wordpress</strong> ⇨ <em>Débutante.</em></p>
+                    <p><strong>Git</strong> ⇨ <em>Débutante.</em></p>
+                </td>
+                    <td class="tdright">
+                        <p>Créative</p>
+                        <p>Autonome</p>
+                        <p>Polyvalente</p>
+                        <p>Curieuse</p>
+                        <p>Patiente</p>
+                </td></tr>
+            </table>
+            </main>
+    </div>
+    
+    <script src="experiences.js"></script>
+    <script src="formations.js"></script>
+    <script src="themes.js"></script>
+
+</body>
+</html>
